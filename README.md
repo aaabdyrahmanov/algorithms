@@ -5,6 +5,35 @@ Repo is based on challenge solutions of the coding platforms:
 - [Codewars](#codewars)
 - [LeetCode](#leetcode)
 
+## Getting Started
+These instructions will get you a copy of the algorithms and will help on running the project for testing purposes.
+
+### Prerequisites
+
+- Installed local [Node.js](https://nodejs.org/) environment
+- Package manager to install packages. [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+
+Clone the repo in your environment
+
+```bash
+git clone https://github.com/aaabdyrahmanov/algorithms.git
+```
+
+### Installing
+
+```bash
+# move into project folder
+cd algorithms
+
+# install the dependencies
+yarn install
+```
+
+#### Running tests
+```bash
+yarn test
+```
+
 ## Codewars
 | # | Challenge | Solution | Difficulty | 
 |---| --------- | -------- | ---------- | 
