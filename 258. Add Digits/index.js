@@ -1,6 +1,6 @@
-const addDigits = (number) => {
-
+module.exports = function addDigits (number) {
     let answer = number;
+
     while (answer > 9) {
       let sum = 0;
 
@@ -11,11 +11,7 @@ const addDigits = (number) => {
       }
       answer = sum;
     }
+
     return answer;
 };
 
-// addDigits(38)   ->  2 
-// addDigits(23)   ->  5
-// addDigits(209)  ->  2
-// addDigits(89)   ->  8
-// addDigits(76)   ->  4

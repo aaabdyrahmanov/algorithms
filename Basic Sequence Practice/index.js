@@ -1,4 +1,4 @@
-function sumOfN(n) {
+module.exports = function sumOfN(n) {
     let sumsArr = [0];
     let sum = 0
     for(let i = 1; i<=Math.abs(n);i++) {
@@ -7,13 +7,3 @@ function sumOfN(n) {
     }
     return sumsArr
   };
-
-    /**
-   *  
-   * sumOfN(1), [0, 1]
-   * 
-   * sumOfN(3), [0, 1, 3, 6]   
-   * 
-   * sumOfN(-6), [0, -1, -3, -6, -10, -15, -21]
-   * 
-   */

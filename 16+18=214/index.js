@@ -1,4 +1,4 @@
-function add(num1, num2) {
+module.exports = function add(num1, num2) {
     num1 = num1.toString().split('').map(Number).reverse();
     num2 = num2.toString().split('').map(Number).reverse();
     let result = [];
@@ -14,13 +14,3 @@ function add(num1, num2) {
     }
     return Number(result.reverse().join(''));
   }
-
-    /**
-   * 
-   * add(0, 0), 0
-   * 
-   * add(16, 18), 214
-   * 
-   * add(122, 81), 1103
-   * 
-   */

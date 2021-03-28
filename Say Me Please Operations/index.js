@@ -1,4 +1,4 @@
-function sayMeOperations(str) {
+module.exports = function sayMeOperations(str) {
     const numberList = str.split(" ").map(a=> parseInt(a))
     const operationList = []
 
@@ -17,14 +17,3 @@ function sayMeOperations(str) {
     const operationListAsString = operationList.toString().split(",").join(", ");;
     return operationListAsString
   }
-
-  /**
-   * 
-   * (sayMeOperations("2 2 4"), "addition")
-   * 
-   * sayMeOperations("1 2 3 5 8"), "addition, addition, addition")
-   * 
-   * sayMeOperations("15 15 225 240 54000 54240 2928960000 158866790400000 158869719360000 2.523912240647194e+28 2.52391224064721e+28 0",
-   * "multiplication, addition, multiplication, addition, multiplication, multiplication, addition, multiplication, addition, division")
-   * 
-   */

@@ -1,8 +1,8 @@
-const sortColors = function(nums) {
+module.exports = function sortColors (nums) {
     let k = 0
     let j = 0
     for(let index = 0; index < nums.length; index++) {
-        
+
         // current number
         let v = nums[index]
         nums[index] = 2
@@ -21,6 +21,3 @@ const sortColors = function(nums) {
     return nums;
 };
 
-// sortColors([2,0,2,1,1,0])   ->  [0,0,1,1,2,2]
-// sortColors([2,0,1])   ->  [0,1,2]
-// sortColors([1,2,0,2,2,2,2])   ->  [0,1,2,2,2,2,2]

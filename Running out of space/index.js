@@ -1,4 +1,4 @@
-function spacey(arr){
+module.exports = function spacey(arr){
     let result = [],
         index = 1
     while(index<=arr.length) {
@@ -8,13 +8,3 @@ function spacey(arr){
     }
     return result
   }
-
-    /**
-   * 
-   * spacey(['Istanbul','is','so','crowded'), ['Istanbul','Istanbulis','Istanbulisso','Istanbulissocrowded']
-   * 
-   * spacey(['kevin', 'has','no','space']), [ 'kevin', 'kevinhas', 'kevinhasno', 'kevinhasnospace']
-   * 
-   * spacey(['this','cheese','has','no','holes']), ['this','thischeese','thischeesehas','thischeesehasno','thischeesehasnoholes']
-   * 
-   */

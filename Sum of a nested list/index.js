@@ -1,4 +1,4 @@
-const sumNested = arr => {
+module.exports = function sumNested (arr) {
     var sum = 0
     if (typeof arr === 'number')
         return arr
@@ -8,13 +8,3 @@ const sumNested = arr => {
     }
     return sum
   }
-
-    /**
-   * 
-   * sumNested([1, 2, 3, 40]), 46
-   * 
-   * sumNested([[ 1 ], [[ 1 ], [[ 1 ]]], [ 2 ]]), 5
-   * 
-   * sumNested([[ ], [ ], [[[[[[[[ ]]]]]]]], [[ ], [[ ]]], [[[ ], [[ ]]]], [ ]]), 0
-   * 
-   */

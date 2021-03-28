@@ -1,4 +1,4 @@
-function solution(string) {
+module.exports = function solution(string) {
     let arr = []
     
     for(let i=0; i<string.length; i++) {
@@ -8,13 +8,3 @@ function solution(string) {
     
     return string;
   }
-
-    /**
-   * 
-   * solution('camelCasing') => 'camel Casing'
-   * 
-   * solution('camelCasingTest') => 'camel Casing Test'
-   * 
-   * solution('camelCaseLetters'), 'camel Case Letters'
-   * 
-   */

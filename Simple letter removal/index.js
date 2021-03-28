@@ -1,4 +1,4 @@
-const solve = (s, k) => {
+module.exports = function solve (s, k) {
     let del = s.split``.sort().join``.slice(0, k);
     while (del) {
       s = s.replace(del[0], '');
@@ -6,13 +6,3 @@ const solve = (s, k) => {
     }
     return s;
   }
-
-   /**
-   * 
-   * solve('abracadabra', 50),''
-   * 
-   * solve('abracadabra', 1),'bracadabra'
-   * 
-   * solve('abracadabra', 8),'rdr' 
-   * 
-   */

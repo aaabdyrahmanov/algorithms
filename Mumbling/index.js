@@ -1,4 +1,4 @@
-function accum(str) {
+module.exports = function accum(str) {
     let result = ''
     
     for (let i = 0; i < str.length; i++) {
@@ -11,13 +11,3 @@ function accum(str) {
 
     return result
   }
-
-  /**
-   * 
-   * accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
-   * 
-   * accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm"
-   * 
-   * accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc"
-   * 
-   */

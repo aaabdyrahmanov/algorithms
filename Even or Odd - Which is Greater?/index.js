@@ -1,4 +1,4 @@
-function evenOrOdd(str) {
+module.exports = function evenOrOdd(str) {
     let odds = 0,
         evens = 0;
     for(let i=0; i<str.length; i++) {
@@ -11,13 +11,3 @@ function evenOrOdd(str) {
     
     return odds>evens ? 'Odd is greater than Even' : (odds<evens ? 'Even is greater than Odd' : 'Even and Odd are the same')
   }
-
-    /**
-   * 
-   * evenOrOdd('12'), 'Even is greater than Odd'
-   *     
-   * evenOrOdd('121'), 'Even and Odd are the same'
-   * 
-   * evenOrOdd('12345'), 'Odd is greater than Even'
-   * 
-   */

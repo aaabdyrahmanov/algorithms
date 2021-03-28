@@ -1,4 +1,4 @@
-const isPowerofFour = (num) => {
+module.exports = function isPowerofFour (num) {
     if (num===1) {
         return true
     }
@@ -12,6 +12,3 @@ const isPowerofFour = (num) => {
     return false
 }
 
-// isPowerofFour(64)  ->  true
-// isPowerofFour(127) ->  false
-// isPowerofFour(1)   ->  true
