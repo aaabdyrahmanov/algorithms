@@ -1,0 +1,15 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "eqeqeq": "off",
+    "radix": "off",
+    "no-plusplus": "off",
+    "no-return-assign": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-syntax": "off"
+  }
+}

@@ -1,3 +1,3 @@
 module.exports = function validSpacing(s) {
-    return s.trim() == s && !s.includes("  ");
-  }
+  return s.trim() == s && !s.includes("  ");
+};

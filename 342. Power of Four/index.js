@@ -1,14 +1,15 @@
-module.exports = function isPowerofFour (num) {
-    if (num===1) {
-        return true
-    }
-    let f = 4
-    while (f<=num) {
-        if (f===num) {
-            return true
-        }
-        f*=4
-    }
-    return false
-}
+module.exports = function isPowerofFour(num) {
+  if (num === 1) {
+    return true;
+  }
 
+  let f = 4;
+  while (f <= num) {
+    if (f === num) {
+      return true;
+    }
+    f *= 4;
+  }
+
+  return false;
+};

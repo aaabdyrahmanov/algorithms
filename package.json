@@ -6,9 +6,16 @@
     "node": ">= 12.14.1"
   },
   "scripts": {
+    "lint": "pretty-quick -w . && eslint . --fix",
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "supertest": "^6.1.6"
   }
 }

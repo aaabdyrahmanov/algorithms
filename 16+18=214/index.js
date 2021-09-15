@@ -1,16 +1,18 @@
 module.exports = function add(num1, num2) {
-    num1 = num1.toString().split('').map(Number).reverse();
-    num2 = num2.toString().split('').map(Number).reverse();
-    let result = [];
-    let maxLength = Math.max(num1.length, num2.length);
-    for (let i = 0; i < maxLength; i++) {
-      if (num1[i] === undefined) {
-          result.push(num2[i]);
-      } else if (num2[i] === undefined) {
-        result.push(num1[i]);
-      } else {
-        result.push(num1[i] + num2[i]);
-      }
+  const reversedNum1 = num1.toString().split("").map(Number).reverse();
+  const reversedNum2 = num2.toString().split("").map(Number).reverse();
+  const maxLength = Math.max(reversedNum1.length, reversedNum2.length);
+  const result = [];
+
+  for (let i = 0; i < maxLength; i++) {
+    if (!reversedNum1[i]) {
+      result.push(reversedNum2[i]);
+    } else if (!reversedNum2[i]) {
+      result.push(reversedNum1[i]);
+    } else {
+      result.push(reversedNum1[i] + reversedNum2[i]);
     }
-    return Number(result.reverse().join(''));
   }
+
+  return Number(result.reverse().join(""));
+};
