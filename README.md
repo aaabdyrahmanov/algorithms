@@ -1,17 +1,17 @@
 # Algorithms
 
 ## Basic Overview
-Repo is based on challenge solutions of the coding platforms:
+Repo is based on challenge solutions of the following coding platforms:
 - [Codewars](#codewars)
 - [LeetCode](#leetcode)
 
 ## Getting Started
-These instructions will get you a copy of the algorithms and will help on running the project for testing purposes.
+These instructions will get you a copy of the algorithms and help you to better understand on the algorithms with their provided tests.
 
 ### Prerequisites
 
-- Installed local [Node.js](https://nodejs.org/) environment
-- Package manager to install packages. [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+- Install local [Node.js](https://nodejs.org/) environment
+- Install one of the following [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) package managers locally
 
 Clone the repo in your environment
 
