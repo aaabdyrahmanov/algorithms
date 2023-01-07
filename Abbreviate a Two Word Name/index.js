@@ -1,6 +1,5 @@
 module.exports = function abbrevName(name) {
-  return name
-    .split(" ")
-    .map((w) => w[0].toUpperCase())
-    .join(".");
+  const [firstName, lastName] = name.split(" ");
+  
+  return `${firstName[0].toUpperCase()}.${lastName[0].toUpperCase()}`;
 };
