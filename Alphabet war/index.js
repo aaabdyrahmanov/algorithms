@@ -1,6 +1,5 @@
 module.exports = function alphabetWar(fight) {
-  const arrayOfFighters = fight.split("");
-  const powersOfLetters = {
+  const powers = {
     w: -4,
     p: -3,
     b: -2,
@@ -10,12 +9,10 @@ module.exports = function alphabetWar(fight) {
     q: 3,
     m: 4,
   };
-  let sum = 0;
-
-  arrayOfFighters.forEach((fighter) => (sum += powersOfLetters[fighter]));
-
+  const sum = fight.split("").reduce((total, ch) => total + powers[ch], 0);
+  
   if (sum < 0) return "Left side wins!";
   if (sum > 0) return "Right side wins!";
-
+  
   return "Let's fight again!";
-};
+}
