@@ -1,13 +1,11 @@
 module.exports = function isUgly(num) {
   if (num < 1) return false;
-  let receviedNum = num;
 
-  while (receviedNum >= 2) {
-    if (receviedNum % 2 === 0) receviedNum /= 2;
-    else if (receviedNum % 3 === 0) receviedNum /= 3;
-    else if (receviedNum % 5 === 0) receviedNum /= 5;
-    else return false;
+  for (let divisor of [2, 3, 5]) {
+    while (num % divisor === 0) {
+      num /= divisor;
+    }
   }
 
-  return true;
+  return num === 1;
 };
