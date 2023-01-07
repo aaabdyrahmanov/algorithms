@@ -1,23 +1,20 @@
 module.exports = function sortColors(nums) {
-  const numbers = nums;
-  let k = 0;
-  let j = 0;
+  let low = 0,
+      high = nums.length - 1,
+      i = 0;
 
-  for (let index = 0; index < numbers.length; index++) {
-    // current number
-    const v = numbers[index];
-    numbers[index] = 2;
-
-    if (v < 2) {
-      numbers[j] = 1;
-      j += 1;
-    }
-
-    if (v === 0) {
-      numbers[k] = 0;
-      k += 1;
+  while (i <= high) {
+    if (nums[i] === 0) {
+      [nums[i], nums[low]] = [nums[low], nums[i]];
+      low++;
+      i++;
+    } else if (nums[i] === 2) {
+      [nums[i], nums[high]] = [nums[high], nums[i]];
+      high--;
+    } else {
+      i++;
     }
   }
 
-  return numbers;
+  return nums;
 };
